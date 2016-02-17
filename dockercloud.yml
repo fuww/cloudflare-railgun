@@ -1,0 +1,19 @@
+cloudflare-railgun:
+  image: 'fuww/cloudflare-railgun:latest'
+  environment:
+    - RG_ACT_HOST=IPADDRESS
+    - RG_ACT_TOKEN=TOKEN
+    - RG_LOG_LEVEL=1
+  links:
+    - 'railgun-memcached:memcached'
+  ports:
+    - '2408:2408'
+  restart: always
+  tags:
+    - CLOUDFLARE-RAILGUN
+    - production
+railgun-memcached:
+  image: 'memcached:latest'
+  restart: always
+  tags:
+    - CLOUDFLARE-RAILGUN
