@@ -1,3 +1,5 @@
+[![](https://badge.imagelayers.io/fuww/cloudflare-railgun:latest.svg)](https://imagelayers.io/?images=fuww/cloudflare-railgun:latest 'Get your own badge on imagelayers.io')
+
 # cloudflare-railgun
 Dockerfile for cloudflare's railgun
 
